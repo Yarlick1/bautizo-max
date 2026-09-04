@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <defs><radialGradient id="r" cx="50%" cy="25%" r="80%"><stop stop-color="#fff"/><stop offset=".55" stop-color="#e0f2fe"/><stop offset="1" stop-color="#f8fafc"/></radialGradient></defs>
+  <rect width="900" height="520" fill="url(#r)"/>
+  <path d="M450 96c95 68 154 143 154 236v82H296v-82c0-93 59-168 154-236z" fill="#fff" opacity=".88"/>
+  <path d="M450 96c95 68 154 143 154 236" fill="none" stroke="#7dd3fc" stroke-width="14" stroke-linecap="round"/>
+  <path d="M450 118v104M405 170h90" stroke="#38bdf8" stroke-width="17" stroke-linecap="round"/>
+  <path d="M402 414V312c0-30 21-55 48-55s48 25 48 55v102" fill="#bfdbfe" opacity=".68"/>
+  <circle cx="232" cy="155" r="44" fill="#fed7aa" opacity=".42"/>
+  <circle cx="674" cy="152" r="52" fill="#bae6fd" opacity=".44"/>
+  <text x="450" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#64748b">Iglesia</text>
+</svg>

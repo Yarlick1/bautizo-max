@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#f8fafc"/>
+  <path d="M0 360c145-62 284-64 416-6s296 52 484-24v190H0z" fill="#e0f2fe"/>
+  <path d="M312 405V190h276v215" fill="#fff" opacity=".9"/>
+  <path d="M328 190l122-88 122 88" fill="none" stroke="#93c5fd" stroke-width="15" stroke-linejoin="round"/>
+  <path d="M450 88v96M410 136h80" stroke="#0ea5e9" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="450" cy="267" r="46" fill="#bae6fd" opacity=".75"/>
+  <path d="M408 405V326c0-25 18-45 42-45s42 20 42 45v79" fill="#dbeafe"/>
+  <text x="450" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#64748b">Ceremonia</text>
+</svg>

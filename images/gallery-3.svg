@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960">
+  <rect width="720" height="960" fill="#f8fafc"/>
+  <circle cx="570" cy="190" r="210" fill="#bae6fd" opacity="0.46"/>
+  <circle cx="160" cy="760" r="220" fill="#ffedd5" opacity="0.7"/>
+  <path d="M220 570c0-98 62-178 140-178s140 80 140 178" fill="#ffffff" opacity="0.88"/>
+  <path d="M240 572h240v96H240z" fill="#ffffff" opacity="0.88"/>
+  <path d="M360 250v118M312 309h96" stroke="#38bdf8" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="360" cy="254" r="82" fill="none" stroke="#7dd3fc" stroke-width="14" opacity="0.8"/>
+  <text x="360" y="810" text-anchor="middle" font-family="Georgia, serif" font-size="38" fill="#64748b">Celebracion</text>
+</svg>

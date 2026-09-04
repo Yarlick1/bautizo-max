@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e0f2fe"/><stop offset="1" stop-color="#fff7ed"/></linearGradient></defs>
+  <rect width="900" height="520" fill="url(#g)"/>
+  <circle cx="720" cy="95" r="72" fill="#fff" opacity=".75"/>
+  <path d="M450 105v108M405 159h90" stroke="#38bdf8" stroke-width="18" stroke-linecap="round"/>
+  <path d="M245 410V220l205-118 205 118v190" fill="#fff" opacity=".86"/>
+  <path d="M245 220l205-118 205 118" fill="none" stroke="#7dd3fc" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M395 410V292c0-34 24-62 55-62s55 28 55 62v118" fill="#bfdbfe" opacity=".72"/>
+  <text x="450" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#64748b">Parroquia</text>
+</svg>
