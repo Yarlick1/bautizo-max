@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" role="img" aria-labelledby="title desc">
+  <title id="title">Foto generica del bebe</title>
+  <desc id="desc">Placeholder elegante para colocar la foto del bebe.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#e0f2fe"/>
+      <stop offset="0.58" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#fff7ed"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="960" fill="url(#bg)"/>
+  <circle cx="360" cy="340" r="130" fill="#ffffff" opacity="0.88"/>
+  <circle cx="360" cy="312" r="74" fill="#bae6fd" opacity="0.72"/>
+  <path d="M230 602c28-118 232-118 260 0 10 43-22 78-65 78H295c-43 0-75-35-65-78z" fill="#ffffff" opacity="0.9"/>
+  <path d="M360 170v110M312 225h96" stroke="#38bdf8" stroke-width="20" stroke-linecap="round"/>
+  <text x="360" y="795" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#64748b">Louis Maximiliano</text>
+  <text x="360" y="850" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" letter-spacing="6" fill="#0ea5e9">FOTO DEL BEBE</text>
+</svg>
