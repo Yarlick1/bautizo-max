@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Church, Clock, ExternalLink, Loader, MapPin, PartyPopper, Shirt } from 'lucide-react'
+import { Church, Clock, ExternalLink, MapPin, PartyPopper, Shirt } from 'lucide-react'
 import { ArticleImageSlider } from './ArticleImageSlider'
 
 const details = [
@@ -10,18 +10,53 @@ const details = [
     location: 'El Castaño Capilla "Santa Maria de Guadalupe"',
     icon: Church,
     mapUrl: 'https://maps.app.goo.gl/of6ZmRwrPfAtc3oN6',
-    images: ['/images/iglesia_1.jpg', '/images/iglesia_2.jpg', '/images/iglesia_3.jpg'],
+    images: ['/images/iglesia_1.webp', '/images/iglesia_2.webp', '/images/iglesia_3.webp'],
   },
   {
     title: 'Recepción',
     subtitle: 'Salón',
-    time: '00:00 p.m.',
+    time: '02:00 p.m.',
     location: 'Jardín "EL PORTAL", Calle Ignacio Zaragoza 415, Bella Vista, 52172 San Salvador Tizatlalli, Méx.',
     icon: PartyPopper,
     mapUrl: 'https://maps.app.goo.gl/LXvmFuPkkkpqVxkPA',
-    images: ['/images/salon_1.png', '/images/salon_2.png', '/images/salon_3.png'],
+    images: ['/images/salon_1.webp', '/images/salon_2.webp', '/images/salon_3.webp'],
   },
 ]
+
+const dressCodeInspirationUrl = 'https://pin.it/44Ra7MP5d'
+
+const dressCodeColors = [
+  { name: 'Beige', value: '#eadbd0' },
+  { name: 'Azul pastel', value: '#c4ddf0' },
+  { name: 'Lavanda', value: '#d8c8ee' },
+  { name: 'Rosa suave', value: '#f7dddd' },
+  { name: 'Nude', value: '#dfc4aa' },
+  { name: 'Durazno', value: '#f8d8c0' },
+  { name: 'Menta', value: '#c9e9e2' },
+  { name: 'Vainilla', value: '#f8ebc8' },
+]
+
+function DressCodePalette() {
+  return (
+    <div className="mt-5 w-full text-center">
+      <p className="font-serif text-base leading-7 text-[#a43670]">
+        Beige, Nude & Colores Pasteles
+      </p>
+
+      <div className="mx-auto mt-5 grid max-w-56 grid-cols-4 gap-x-3 gap-y-4">
+        {dressCodeColors.map((color) => (
+          <span
+            key={color.name}
+            aria-label={color.name}
+            title={color.name}
+            className="block aspect-square rounded-full shadow-[inset_0_0_0_1px_rgba(255,255,255,0.75),0_8px_18px_rgba(148,163,184,0.16)]"
+            style={{ backgroundColor: color.value }}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
 
 export function EventDetails() {
   return (
@@ -81,21 +116,30 @@ export function EventDetails() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6, delay: 0.08 }}
-        className="flex items-center min-h-80 flex-col rounded-lg border border-sky-100 bg-white/82 p-5 text-left shadow-sm backdrop-blur"
+        className="flex items-center min-h-80 flex-col rounded-lg border border-sky-100 bg-white/82 p-5 text-center shadow-sm backdrop-blur"
       >
         <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-sky-50 text-sky-500">
           <Shirt className="h-6 w-6" strokeWidth={1.7} />
         </div>
 
-        <h3 className=" font-script text-5xl font-semibold text-slate-700">
-          Código de Vestimenta
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#4f7f42]">
+          Código de
+        </p>
+        <h3 className="font-script text-5xl font-semibold leading-none text-slate-700">
+          Vestimenta
         </h3>
-        <div className="mt-5 space-y-3 text-sm leading-6 text-slate-500">
-          <p className="flex items-start justify-center gap-2">
-            <Loader className="mt-0.5 h-4 w-4 shrink-0 text-sky-400" />
-            En espera...
-          </p>
-        </div>
+
+        <DressCodePalette />
+
+        <a
+          href={dressCodeInspirationUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-sky-100 bg-sky-50 px-4 py-3 text-sm font-semibold text-sky-600 transition-colors hover:bg-sky-100 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-100"
+        >
+          Ver inspiración de vestimenta
+          <ExternalLink className="h-4 w-4" />
+        </a>
       </motion.article>
     </div>
   )

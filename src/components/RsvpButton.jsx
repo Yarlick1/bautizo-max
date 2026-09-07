@@ -1,17 +1,14 @@
 import { motion } from 'framer-motion'
 import { MessageCircle } from 'lucide-react'
 
-const whatsappPhone = '527222611354'
+const whatsappPhone = '527224118079'
 
-function getRsvpText(invitado) {
-  const familia = invitado?.isGeneric ? '[Nombre Familia]' : invitado.familia
-  const personas = invitado?.boletos ?? '[X]'
-
-  return `Hola, confirmo mi asistencia. ${familia}, seremos ${personas} personas.`
+function getRsvpText() {
+  return 'Hola, confirmo mi asistencia. Seremos ## personas.'
 }
 
-export function RsvpButton({ invitado }) {
-  const whatsappUrl = `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(getRsvpText(invitado))}`
+export function RsvpButton() {
+  const whatsappUrl = `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(getRsvpText())}`
 
   return (
     <motion.a

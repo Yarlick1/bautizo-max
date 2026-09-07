@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960">
-  <rect width="720" height="960" fill="#fff7ed"/>
-  <path d="M0 250c150-120 300-120 450 0s270 120 270 0v710H0z" fill="#e0f2fe" opacity="0.78"/>
-  <circle cx="360" cy="360" r="155" fill="#ffffff" opacity="0.86"/>
-  <path d="M360 230c62 58 102 112 102 174 0 64-45 112-102 112s-102-48-102-112c0-62 40-116 102-174z" fill="#bae6fd" opacity="0.82"/>
-  <path d="M360 295v110M314 350h92" stroke="#0284c7" stroke-width="18" stroke-linecap="round"/>
-  <text x="360" y="800" text-anchor="middle" font-family="Georgia, serif" font-size="38" fill="#64748b">Agua bendita</text>
-</svg>

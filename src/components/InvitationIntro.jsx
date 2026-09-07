@@ -3,6 +3,7 @@ import { Baby, Heart } from 'lucide-react'
 import { CornerBouquet } from './CornerBouquet'
 import { Countdown } from './Countdown'
 import { EventDetails } from './EventDetails'
+import { HeroPhotoSlider } from './HeroPhotoSlider'
 import { PhotoCarousel } from './PhotoCarousel'
 import { RsvpButton } from './RsvpButton'
 
@@ -38,19 +39,7 @@ export function InvitationIntro({ invitado }) {
         >
           Louis <br /> Maximiliano
         </motion.h1>
-
-        <motion.figure
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.75, delay: 0.1 }}
-          className="relative mb-8 h-92 w-76 overflow-hidden rounded-lg border-4 border-white bg-white shadow-[0_22px_70px_rgba(125,211,252,0.34)] sm:h-96 sm:w-72"
-        >
-          <img
-            src="/images/baby-placeholder.svg"
-            alt="Espacio para foto de Louis Maximiliano"
-            className="h-full w-full object-cover"
-          />
-        </motion.figure>
+        <HeroPhotoSlider />
 
         <motion.p
           initial={{ opacity: 0, y: 18 }}

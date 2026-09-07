@@ -43,15 +43,16 @@ export function WelcomeCover({ invitado, onOpen }) {
           Louis Maximiliano
         </h1>
 
-        <div className="mt-6 flex items-center gap-2 text-sm text-slate-400">
+        <div className="flex items-center gap-2 text-sm text-slate-400">
           <Heart className="h-4 w-4 fill-sky-100 text-sky-400" strokeWidth={1.6} />
-          <span>{invitado.familia}</span>
+          {/* <span>{invitado.familia}</span> */}
+          <p className="mt-5 max-w-sm text-sm leading-7 text-slate-400 sm:text-base">
+            Una celebración de fe, amor y gratitud para compartir en familia.
+          </p>
           <Heart className="h-4 w-4 fill-sky-100 text-sky-400" strokeWidth={1.6} />
         </div>
 
-        <p className="mt-5 max-w-sm text-sm leading-7 text-slate-400 sm:text-base">
-          Una celebración de fe, amor y gratitud para compartir en familia.
-        </p>
+
 
         <motion.button
           type="button"
