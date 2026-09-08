@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Church, Clock, ExternalLink, MapPin, PartyPopper, Shirt } from 'lucide-react'
+import { Church, Clock, ExternalLink, Gift, MapPin, PartyPopper, Shirt } from 'lucide-react'
 import { ArticleImageSlider } from './ArticleImageSlider'
 
 const details = [
@@ -24,6 +24,7 @@ const details = [
 ]
 
 const dressCodeInspirationUrl = 'https://pin.it/44Ra7MP5d'
+const giftRegistryUrl = 'https://www.amazon.com.mx/baby-reg/maximiliano-hernandezperez-septiembre-2026-toluca/37XIM4SG35CCO?ref_=cm_sw_r_cp_ud_dp_SHEJZ86QWVE5PMKKQFNN_1'
 
 const dressCodeColors = [
   { name: 'Beige', value: '#eadbd0' },
@@ -138,6 +139,39 @@ export function EventDetails() {
           className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-sky-100 bg-sky-50 px-4 py-3 text-sm font-semibold text-sky-600 transition-colors hover:bg-sky-100 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-100"
         >
           Ver inspiración de vestimenta
+          <ExternalLink className="h-4 w-4" />
+        </a>
+      </motion.article>
+
+      <motion.article
+        key="mesa-regalos"
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, delay: 0.12 }}
+        className="flex items-center min-h-72 flex-col rounded-lg border border-sky-100 bg-white/82 p-5 text-center shadow-sm backdrop-blur md:col-start-3"
+      >
+        <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-sky-50 text-sky-500">
+          <Gift className="h-6 w-6" strokeWidth={1.7} />
+        </div>
+
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-500">
+          Mesa de regalos
+        </p>
+        <h3 className="mt-2 font-script text-5xl font-semibold leading-none text-slate-700">
+          Para Max
+        </h3>
+        <p className="mt-5 font-serif text-sm leading-7 text-slate-500">
+          Si deseas tener un detalle, puedes encontrar algunas ideas preparadas con mucho cariño.
+        </p>
+
+        <a
+          href={giftRegistryUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-sky-100 bg-sky-50 px-4 py-3 text-sm font-semibold text-sky-600 transition-colors hover:bg-sky-100 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-100"
+        >
+          Ver mesa de regalos
           <ExternalLink className="h-4 w-4" />
         </a>
       </motion.article>

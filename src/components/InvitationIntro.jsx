@@ -6,6 +6,7 @@ import { EventDetails } from './EventDetails'
 import { HeroPhotoSlider } from './HeroPhotoSlider'
 import { PhotoCarousel } from './PhotoCarousel'
 import { RsvpButton } from './RsvpButton'
+import { DeveloperCredit } from './DevoloperCredit'
 
 const eventDate = '2026-10-03T12:00:00-06:00'
 
@@ -110,6 +111,10 @@ export function InvitationIntro({ invitado }) {
       </section>
 
       <PhotoCarousel />
+      <DeveloperCredit
+        variant="footer"
+        portfolioUrl="https://portafolio-alpha-sepia-99.vercel.app/"
+      />
     </div>
   )
 }
