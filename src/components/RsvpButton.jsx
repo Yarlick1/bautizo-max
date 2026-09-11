@@ -4,7 +4,7 @@ import { MessageCircle } from 'lucide-react'
 const whatsappPhone = '527224118079'
 
 function getRsvpText() {
-  return 'Hola, confirmo mi asistencia.'
+  return 'Hola, confirmo mi asistencia al bautizo de Maxi.'
 }
 
 export function RsvpButton() {
