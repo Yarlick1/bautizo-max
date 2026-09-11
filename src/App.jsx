@@ -4,20 +4,9 @@ import { useEffect, useRef, useState } from 'react'
 import { FloralDetails } from './components/FloralDetails'
 import { InvitationIntro } from './components/InvitationIntro'
 import { WelcomeCover } from './components/WelcomeCover'
+import { heroPhotos, warmupPhotos } from './data/images'
 import { useInvitado } from './hooks/useInvitado'
 
-const priorityImages = [
-  '/images/max/max25.webp',
-  '/images/max/max09.webp',
-  '/images/max/max11.webp',
-]
-
-const warmupImages = [
-  '/images/max/max01.webp',
-  '/images/max/max02.webp',
-  '/images/max/max03.webp',
-  '/images/max/max05.webp',
-]
 
 function preloadImages(images) {
   images.forEach((src) => {
@@ -44,8 +33,8 @@ function App() {
   const [isMuted, setIsMuted] = useState(false)
 
   useEffect(() => {
-    preloadImages(priorityImages)
-    return runWhenIdle(() => preloadImages(warmupImages))
+    preloadImages(heroPhotos)
+    return runWhenIdle(() => preloadImages(warmupPhotos))
   }, [])
 
   const handleOpenInvitation = async () => {

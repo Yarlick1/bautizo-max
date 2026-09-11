@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Church, Clock, ExternalLink, Gift, MapPin, PartyPopper, Shirt } from 'lucide-react'
 import { ArticleImageSlider } from './ArticleImageSlider'
+import { churchPhotos, receptionPhotos } from '../data/images'
 
 const details = [
   {
@@ -10,7 +11,7 @@ const details = [
     location: 'El Castaño Capilla "Santa Maria de Guadalupe"',
     icon: Church,
     mapUrl: 'https://maps.app.goo.gl/of6ZmRwrPfAtc3oN6',
-    images: ['/images/iglesia_1.webp', '/images/iglesia_2.webp', '/images/iglesia_3.webp'],
+    images: churchPhotos,
   },
   {
     title: 'Recepción',
@@ -19,7 +20,7 @@ const details = [
     location: 'Jardín "EL PORTAL", Calle Ignacio Zaragoza 415, Bella Vista, 52172 San Salvador Tizatlalli, Méx.',
     icon: PartyPopper,
     mapUrl: 'https://maps.app.goo.gl/LXvmFuPkkkpqVxkPA',
-    images: ['/images/salon_1.webp', '/images/salon_2.webp', '/images/salon_3.webp'],
+    images: receptionPhotos,
   },
 ]
 
@@ -162,7 +163,7 @@ export function EventDetails() {
           Para Max
         </h3>
         <p className="mt-5 font-serif text-sm leading-7 text-slate-500">
-          Si deseas tener un detalle, puedes encontrar algunas ideas preparadas con mucho cariño.
+          Tu presencia es nuestro mejor regalo y lo que más valoramos para acompañar a Louis Maximiliano en este día tan especial. Sin embargo, si nace de tu corazón ofrecerle un detalle, te compartimos algunas sugerencias con mucho cariño.
         </p>
 
         <a

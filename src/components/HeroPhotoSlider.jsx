@@ -1,11 +1,6 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-
-const heroPhotos = [
-  '/images/max/max25.webp',
-  '/images/max/max09.webp',
-  '/images/max/max11.webp',
-]
+import { heroPhotos } from '../data/images'
 
 export function HeroPhotoSlider() {
   const [activeIndex, setActiveIndex] = useState(0)

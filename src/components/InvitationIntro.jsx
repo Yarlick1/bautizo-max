@@ -8,7 +8,7 @@ import { PhotoCarousel } from './PhotoCarousel'
 import { RsvpButton } from './RsvpButton'
 import { DeveloperCredit } from './DevoloperCredit'
 
-const eventDate = '2026-10-03T12:00:00-06:00'
+const eventDate = '2026-10-03T10:00:00-06:00'
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },

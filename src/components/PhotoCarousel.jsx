@@ -1,29 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-
-const photos = [
-  '/images/max/max01.webp',
-  '/images/max/max02.webp',
-  '/images/max/max03.webp',
-  '/images/max/max05.webp',
-  '/images/max/max06.webp',
-  '/images/max/max07.webp',
-  '/images/max/max08.webp',
-  '/images/max/max10.webp',
-  '/images/max/max12.webp',
-  '/images/max/max13.webp',
-  '/images/max/max14.webp',
-  '/images/max/max15.webp',
-  '/images/max/max16.webp',
-  '/images/max/max17.webp',
-  '/images/max/max18.webp',
-  '/images/max/max19.webp',
-  '/images/max/max20.webp',
-  '/images/max/max21.webp',
-  '/images/max/max22.webp',
-  '/images/max/max23.webp',
-  '/images/max/max24.webp',
-  '/images/max/max26.webp',
-]
+import { galleryPhotos } from '../data/images'
 
 const scrollSpeed = 34
 const initialVisiblePhotos = 8
@@ -44,15 +20,15 @@ export function PhotoCarousel() {
   const offsetRef = useRef(0)
   const lastTimeRef = useRef(0)
   const [cycleWidth, setCycleWidth] = useState(0)
-  const [visibleCount, setVisibleCount] = useState(() => Math.min(initialVisiblePhotos, photos.length))
-  const visiblePhotos = useMemo(() => photos.slice(0, visibleCount), [visibleCount])
+  const [visibleCount, setVisibleCount] = useState(() => Math.min(initialVisiblePhotos, galleryPhotos.length))
+  const visiblePhotos = useMemo(() => galleryPhotos.slice(0, visibleCount), [visibleCount])
   const loopedPhotos = useMemo(() => [...visiblePhotos, ...visiblePhotos], [visiblePhotos])
 
   useEffect(() => {
-    if (visibleCount >= photos.length) return undefined
+    if (visibleCount >= galleryPhotos.length) return undefined
 
     return runWhenIdle(() => {
-      setVisibleCount((currentValue) => Math.min(currentValue + loadBatchSize, photos.length))
+      setVisibleCount((currentValue) => Math.min(currentValue + loadBatchSize, galleryPhotos.length))
     })
   }, [visibleCount])
 
